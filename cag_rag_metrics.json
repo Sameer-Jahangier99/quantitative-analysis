@@ -1,0 +1,211 @@
+{
+  "config": "CAG_Enhanced_RAG",
+  "summary": {
+    "system_type": "CAG_Enhanced_RAG",
+    "total_queries": 8,
+    "runtime_seconds": 80.60138702392578,
+    "cache_performance": {
+      "total_hits": 3,
+      "total_misses": 5,
+      "overall_hit_rate": 0.375,
+      "prompt_cache_hits": 3,
+      "semantic_cache_hits": 0,
+      "cache_breakdown": {
+        "prompt": 1.0,
+        "semantic": 0.0
+      }
+    },
+    "latency": {
+      "all_queries": {
+        "mean": 460.88322137484283,
+        "median": 550.8173545003956,
+        "p50": 550.8173545003956,
+        "p95": 1041.859829948589,
+        "p99": 1156.4812019884264,
+        "std": 404.4109237042364,
+        "min": 0.012743999832309783,
+        "max": 1185.136544998386
+      },
+      "cache_hits": {
+        "mean": 0.020803000249240238,
+        "median": 0.016730000425013714,
+        "p95": 0.031314500483858865
+      },
+      "cache_misses": {
+        "mean": 737.400672399599,
+        "median": 624.4576059998508,
+        "p95": 1103.2641363985022
+      },
+      "speedup_factor": 35446.84245372396,
+      "cache_lookup": {
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "retrieval": {
+        "mean": 0,
+        "median": 0
+      },
+      "generation": {
+        "mean": 0,
+        "median": 0
+      }
+    },
+    "tokens": {
+      "total": {
+        "sum": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0
+      },
+      "saved": {
+        "total": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "percentage_saved": 0
+      }
+    },
+    "memory": {
+      "cpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0
+      },
+      "gpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0
+      }
+    },
+    "throughput": {
+      "queries_per_second": 0.09925099855648656
+    }
+  },
+  "individual_queries": [
+    {
+      "query_id": 0,
+      "query": "What is the capital of France?",
+      "answer": "The provided contexts do not mention the capital of France. However, based on general knowledge, the capital of France is Paris.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 1185.136544998386,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765302911.933727
+    },
+    {
+      "query_id": 1,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided contexts do not mention the novel '1984' or its author. However, based on general knowledge, the novel '1984' was written by George Orwell.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 624.4576059998508,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765302911.933727
+    },
+    {
+      "query_id": 2,
+      "query": "When did World War II end?",
+      "answer": "Unfortunately, the provided contexts do not directly mention when World War II ended. However, based on general historical knowledge, World War II ended on September 2, 1945, when Japan formally surrendered to the Allied Powers. \n\nIf you're looking for information related to the war from the provided contexts, Context 3 mentions the possibility of war between Japan and the United States and the 1931 invasion of Manchuria by Japan, which is related to the events leading up to World War II.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 775.774501998967,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765302911.933727
+    },
+    {
+      "query_id": 3,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "Based on the provided contexts, the largest planet in the solar system is Jupiter, as stated in Context 1.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 503.01158000002033,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765302911.933727
+    },
+    {
+      "query_id": 4,
+      "query": "Who discovered penicillin?",
+      "answer": "The provided contexts do not mention the discovery of penicillin. However, based on general knowledge, penicillin was discovered by Scottish scientist Alexander Fleming in 1928. He observed that a mold (Penicillium notatum) had contaminated one of his bacterial cultures, and that the mold had killed off the surrounding bacteria.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 598.6231290007709,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765302911.933727
+    },
+    {
+      "query_id": 5,
+      "query": "What is the capital of France?",
+      "answer": "The provided contexts do not mention the capital of France. However, based on general knowledge, the capital of France is Paris.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.032935000490397215,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765302911.933727
+    },
+    {
+      "query_id": 6,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided contexts do not mention the novel '1984' or its author. However, based on general knowledge, the novel '1984' was written by George Orwell.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.012743999832309783,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765302911.933727
+    },
+    {
+      "query_id": 7,
+      "query": "When did World War II end?",
+      "answer": "Unfortunately, the provided contexts do not directly mention when World War II ended. However, based on general historical knowledge, World War II ended on September 2, 1945, when Japan formally surrendered to the Allied Powers. \n\nIf you're looking for information related to the war from the provided contexts, Context 3 mentions the possibility of war between Japan and the United States and the 1931 invasion of Manchuria by Japan, which is related to the events leading up to World War II.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.016730000425013714,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765302911.933727
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "config": "vanilla_rag",
+  "summary": {
+    "total_queries": 5,
+    "runtime_seconds": 55.21074199676514,
+    "latency": {
+      "total": {
+        "mean": 1497.5816126001519,
+        "median": 804.6502970000802,
+        "p50": 804.6502970000802,
+        "p95": 3473.195564600064,
+        "p99": 3898.39291692002,
+        "std": 1278.5917924747728,
+        "min": 638.3906979999665,
+        "max": 4004.692255000009
+      },
+      "retrieval": {
+        "mean": 1025.8118900001136,
+        "median": 404.2308400003094
+      },
+      "generation": {
+        "mean": 469.5334195999749,
+        "median": 400.29993600001035
+      }
+    },
+    "tokens": {
+      "total": {
+        "sum": 1085,
+        "mean": 217.0,
+        "median": 212.0,
+        "std": 34.39185950192284
+      },
+      "prompt": {
+        "mean": 187.2,
+        "median": 178.0
+      },
+      "context": {
+        "mean": 98.4,
+        "median": 80.0
+      },
+      "generation": {
+        "mean": 29.8,
+        "median": 17.0
+      }
+    },
+    "memory": {
+      "cpu": {
+        "mean_mb": 505.94296875,
+        "peak_mb": 506.0390625
+      },
+      "gpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0.0
+      }
+    },
+    "throughput": {
+      "queries_per_second": 0.09052713232169293
+    }
+  },
+  "individual_queries": [
+    {
+      "query_id": 0,
+      "query": "What is the capital of France?",
+      "answer": "The provided context doesn't contain relevant information about the capital of France.",
+      "total_latency_ms": 1347.2088030002851,
+      "retrieval_latency_ms": 357.63993999989907,
+      "generation_latency_ms": 989.4211229993743,
+      "total_tokens": 171,
+      "prompt_tokens": 156,
+      "context_tokens": 71,
+      "generation_tokens": 15,
+      "cpu_memory_mb": 505.82421875,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765301629.606372
+    },
+    {
+      "query_id": 1,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context doesn't contain relevant information about the novel '1984'. The context mentions three different topics: two novels by different authors (James Patterson and J.D. Salinger) and a description of a group of Americans during the Vietnam War era. None of this information is related to the novel '1984', which is actually a dystopian novel written by George Orwell.",
+      "total_latency_ms": 804.6502970000802,
+      "retrieval_latency_ms": 404.2308400003094,
+      "generation_latency_ms": 400.29993600001035,
+      "total_tokens": 255,
+      "prompt_tokens": 178,
+      "context_tokens": 80,
+      "generation_tokens": 77,
+      "cpu_memory_mb": 505.91015625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765301629.606372
+    },
+    {
+      "query_id": 2,
+      "query": "When did World War II end?",
+      "answer": "World War II ended in 1945.",
+      "total_latency_ms": 638.3906979999665,
+      "retrieval_latency_ms": 473.1912249999368,
+      "generation_latency_ms": 165.11041400008253,
+      "total_tokens": 212,
+      "prompt_tokens": 202,
+      "context_tokens": 102,
+      "generation_tokens": 10,
+      "cpu_memory_mb": 505.9140625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765301629.606372
+    },
+    {
+      "query_id": 3,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "The largest planet in the Solar System is Jupiter, according to Context 1.",
+      "total_latency_ms": 4004.692255000009,
+      "retrieval_latency_ms": 3496.575231000861,
+      "generation_latency_ms": 497.356093000235,
+      "total_tokens": 190,
+      "prompt_tokens": 173,
+      "context_tokens": 78,
+      "generation_tokens": 17,
+      "cpu_memory_mb": 506.02734375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765301629.606372
+    },
+    {
+      "query_id": 4,
+      "query": "Who discovered penicillin?",
+      "answer": "The provided context does not contain relevant information about the discovery of penicillin. Therefore, I cannot answer the question based on the given context.",
+      "total_latency_ms": 692.9660100004185,
+      "retrieval_latency_ms": 397.4222139995618,
+      "generation_latency_ms": 295.4795320001722,
+      "total_tokens": 257,
+      "prompt_tokens": 227,
+      "context_tokens": 161,
+      "generation_tokens": 30,
+      "cpu_memory_mb": 506.0390625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765301629.606372
+    }
+  ]
+}

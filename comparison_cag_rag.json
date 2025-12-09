@@ -1,0 +1,323 @@
+{
+  "config": "CAG_Enhanced_RAG",
+  "summary": {
+    "system_type": "CAG_Enhanced_RAG",
+    "total_queries": 15,
+    "runtime_seconds": 61.886521100997925,
+    "cache_performance": {
+      "total_hits": 5,
+      "total_misses": 10,
+      "overall_hit_rate": 0.3333333333333333,
+      "prompt_cache_hits": 3,
+      "semantic_cache_hits": 2,
+      "cache_breakdown": {
+        "prompt": 0.6,
+        "semantic": 0.4
+      }
+    },
+    "latency": {
+      "all_queries": {
+        "mean": 529.5343039335421,
+        "median": 613.4844320004049,
+        "p50": 613.4844320004049,
+        "p95": 1041.816638199998,
+        "p99": 1110.5060388405764,
+        "std": 392.74579343316685,
+        "min": 0.009374000001116656,
+        "max": 1127.678389000721
+      },
+      "cache_hits": {
+        "mean": 15.361380799731705,
+        "median": 0.030044999220990576,
+        "p95": 40.10015019994171
+      },
+      "cache_misses": {
+        "mean": 786.6207655004473,
+        "median": 729.0428655005599,
+        "p95": 1072.481549200256
+      },
+      "speedup_factor": 51.2076860638847,
+      "cache_lookup": {
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "retrieval": {
+        "mean": 0,
+        "median": 0
+      },
+      "generation": {
+        "mean": 0,
+        "median": 0
+      }
+    },
+    "tokens": {
+      "total": {
+        "sum": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0
+      },
+      "saved": {
+        "total": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "percentage_saved": 0
+      }
+    },
+    "memory": {
+      "cpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0
+      },
+      "gpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0
+      }
+    },
+    "throughput": {
+      "queries_per_second": 0.24237364817141124
+    }
+  },
+  "individual_queries": [
+    {
+      "query_id": 0,
+      "query": "What is the capital of France?",
+      "answer": "The provided contexts do not mention the capital of France. However, based on general knowledge, the capital of France is Paris.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 1005.0187449996884,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 1,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "None of the provided contexts mention the novel '1984'. However, based on general knowledge, the novel '1984' was written by George Orwell.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 741.8734140010201,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 2,
+      "query": "When did World War II end?",
+      "answer": "Unfortunately, the provided contexts do not contain information about when World War II ended. However, based on general knowledge, World War II ended on September 2, 1945, when Japan formally surrendered to the Allied Powers.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 586.7030370009161,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 3,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "The largest planet in the solar system is Jupiter, as stated in Context 1.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 551.2745059986628,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 4,
+      "query": "Who discovered penicillin?",
+      "answer": "The provided contexts do not mention the discovery of penicillin. However, based on general knowledge, penicillin was discovered by Scottish scientist Alexander Fleming in 1928. He observed that a mold (Penicillium notatum) had contaminated one of his bacterial cultures, and that the mold had killed off the surrounding bacteria.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 716.2123170000996,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 5,
+      "query": "Where is the Great Wall located?",
+      "answer": "The provided contexts do not mention the location of the Great Wall. However, I can provide general knowledge about the Great Wall. \n\nThe Great Wall of China is located in China, stretching across the northern border of the country. It is a series of fortifications built to protect the borders of China from invasions. The wall spans over 13,000 miles (21,000 km) and passes through mountains, deserts, and plains.\n\nIf you need more information, please let me know.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 903.8900640007341,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 6,
+      "query": "Who developed the theory of relativity?",
+      "answer": "The provided contexts do not mention the theory of relativity or its developer. However, based on general knowledge, the theory of relativity was developed by Albert Einstein.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 715.1797390015417,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 7,
+      "query": "What is the largest rainforest?",
+      "answer": "The provided contexts do not mention the largest rainforest. However, based on general knowledge, the largest rainforest is the Amazon rainforest, which spans across nine countries in South America, including Brazil, Peru, and Colombia. It covers an area of approximately 5.5 million square kilometers.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 613.4844320004049,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 8,
+      "query": "What plays did Shakespeare write?",
+      "answer": "Unfortunately, the provided contexts do not mention William Shakespeare or his plays. To answer your query, I'll need to provide general information about Shakespeare's works.\n\nWilliam Shakespeare wrote at least 38 plays, including:\n\n1. Tragedies: Romeo and Juliet, Hamlet, Othello, Macbeth, King Lear, and Titus Andronicus.\n2. Comedies: A Midsummer Night's Dream, Twelfth Night, As You Like It, The Taming of the Shrew, and The Merchant of Venice.\n3. Histories: Henry IV, Part 1, Henry IV, Part 2, Henry V, Henry VIII, and Richard III.\n4. Romances: The Tempest, The Winter's Tale, and Pericles, Prince of Tyre.\n\nSome of his other notable plays include Julius Caesar, Antony and Cleopatra, and Coriolanus.\n\nIf you're looking for more information on a specific play or context, please let me know, and I'll do my best to help.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 1127.678389000721,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 9,
+      "query": "How many bones are in the human body?",
+      "answer": "Based on the provided contexts, the exact number of bones in the human body is not explicitly stated. However, we can gather some information about specific bones from the contexts:\n\n- Context 1 mentions the three smallest bones (malleus, incus, and stapes) but does not provide a total count.\n- Context 2 is unrelated to the human body, discussing tectonic plates.\n- Context 3 mentions the tibia and fibula as two bones in the leg but again does not provide a total count.\n\nUnfortunately, none of the contexts directly answer the query about the total number of bones in the human body. Generally, it is known that the adult human body contains 206 bones, but this information is not provided in the given contexts.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 904.8930120006844,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 10,
+      "query": "Who developed the theory of relativity?",
+      "answer": "The provided contexts do not mention the theory of relativity or its developer. However, based on general knowledge, the theory of relativity was developed by Albert Einstein.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.030044999220990576,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 11,
+      "query": "What plays did Shakespeare write?",
+      "answer": "Unfortunately, the provided contexts do not mention William Shakespeare or his plays. To answer your query, I'll need to provide general information about Shakespeare's works.\n\nWilliam Shakespeare wrote at least 38 plays, including:\n\n1. Tragedies: Romeo and Juliet, Hamlet, Othello, Macbeth, King Lear, and Titus Andronicus.\n2. Comedies: A Midsummer Night's Dream, Twelfth Night, As You Like It, The Taming of the Shrew, and The Merchant of Venice.\n3. Histories: Henry IV, Part 1, Henry IV, Part 2, Henry V, Henry VIII, and Richard III.\n4. Romances: The Tempest, The Winter's Tale, and Pericles, Prince of Tyre.\n\nSome of his other notable plays include Julius Caesar, Antony and Cleopatra, and Coriolanus.\n\nIf you're looking for more information on a specific play or context, please let me know, and I'll do my best to help.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.011264999557170086,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 12,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "The largest planet in the solar system is Jupiter, as stated in Context 1.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.009374000001116656,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 13,
+      "query": "Describe how many bones are in the human body?",
+      "answer": "Based on the provided contexts, the exact number of bones in the human body is not explicitly stated. However, we can gather some information about specific bones from the contexts:\n\n- Context 1 mentions the three smallest bones (malleus, incus, and stapes) but does not provide a total count.\n- Context 2 is unrelated to the human body, discussing tectonic plates.\n- Context 3 mentions the tibia and fibula as two bones in the leg but again does not provide a total count.\n\nUnfortunately, none of the contexts directly answer the query about the total number of bones in the human body. Generally, it is known that the adult human body contains 206 bones, but this information is not provided in the given contexts.",
+      "cache_hit": true,
+      "cache_type": "semantic",
+      "total_latency_ms": 35.50804299993615,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    },
+    {
+      "query_id": 14,
+      "query": "Tell me about: who wrote the novel '1984'?",
+      "answer": "None of the provided contexts mention the novel '1984'. However, based on general knowledge, the novel '1984' was written by George Orwell.",
+      "cache_hit": true,
+      "cache_type": "semantic",
+      "total_latency_ms": 41.2481769999431,
+      "cache_lookup_latency_ms": 0,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 0,
+      "gpu_memory_mb": 0,
+      "timestamp": 1765303249.11233
+    }
+  ]
+}

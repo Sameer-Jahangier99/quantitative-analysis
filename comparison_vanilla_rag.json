@@ -1,0 +1,302 @@
+{
+  "config": "vanilla_rag",
+  "summary": {
+    "total_queries": 15,
+    "runtime_seconds": 43.09979486465454,
+    "latency": {
+      "total": {
+        "mean": 918.2045236665241,
+        "median": 733.3163909988798,
+        "p50": 733.3163909988798,
+        "p95": 2130.725433499172,
+        "p99": 3185.756582698813,
+        "std": 729.0340989625777,
+        "min": 411.8171699992672,
+        "max": 3449.514369998724
+      },
+      "retrieval": {
+        "mean": 626.3265637332855,
+        "median": 417.19464200104994
+      },
+      "generation": {
+        "mean": 291.80579346672556,
+        "median": 262.89964100033103
+      }
+    },
+    "tokens": {
+      "total": {
+        "sum": 3267,
+        "mean": 217.8,
+        "median": 214.0,
+        "std": 31.585228615076804
+      },
+      "prompt": {
+        "mean": 192.73333333333332,
+        "median": 202.0
+      },
+      "context": {
+        "mean": 102.53333333333333,
+        "median": 102.0
+      },
+      "generation": {
+        "mean": 25.066666666666666,
+        "median": 17.0
+      }
+    },
+    "memory": {
+      "cpu": {
+        "mean_mb": 507.78932291666666,
+        "peak_mb": 507.84765625
+      },
+      "gpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0.0
+      }
+    },
+    "throughput": {
+      "queries_per_second": 0.34799149316220834
+    }
+  },
+  "individual_queries": [
+    {
+      "query_id": 0,
+      "query": "What is the capital of France?",
+      "answer": "The provided context doesn't contain relevant information about the capital of France.",
+      "total_latency_ms": 705.8689220011729,
+      "retrieval_latency_ms": 281.38780900007987,
+      "generation_latency_ms": 424.33057999915036,
+      "total_tokens": 171,
+      "prompt_tokens": 156,
+      "context_tokens": 71,
+      "generation_tokens": 15,
+      "cpu_memory_mb": 507.65625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 1,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context does not contain relevant information about the novel '1984'.",
+      "total_latency_ms": 515.6796100000065,
+      "retrieval_latency_ms": 283.6220270000922,
+      "generation_latency_ms": 231.9982480003091,
+      "total_tokens": 194,
+      "prompt_tokens": 178,
+      "context_tokens": 80,
+      "generation_tokens": 16,
+      "cpu_memory_mb": 507.72265625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 2,
+      "query": "When did World War II end?",
+      "answer": "World War II ended in 1945.",
+      "total_latency_ms": 411.8171699992672,
+      "retrieval_latency_ms": 277.99265299836406,
+      "generation_latency_ms": 133.78358999943885,
+      "total_tokens": 212,
+      "prompt_tokens": 202,
+      "context_tokens": 102,
+      "generation_tokens": 10,
+      "cpu_memory_mb": 507.7265625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 3,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "The largest planet in the Solar System is Jupiter, as stated in Context 1.",
+      "total_latency_ms": 453.24184600031003,
+      "retrieval_latency_ms": 282.0162119987799,
+      "generation_latency_ms": 171.17478299951472,
+      "total_tokens": 191,
+      "prompt_tokens": 173,
+      "context_tokens": 78,
+      "generation_tokens": 18,
+      "cpu_memory_mb": 507.8125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 4,
+      "query": "Who discovered penicillin?",
+      "answer": "The provided context does not contain relevant information about the discovery of penicillin.",
+      "total_latency_ms": 468.896397998833,
+      "retrieval_latency_ms": 266.7072870008269,
+      "generation_latency_ms": 202.1485669993126,
+      "total_tokens": 244,
+      "prompt_tokens": 227,
+      "context_tokens": 161,
+      "generation_tokens": 17,
+      "cpu_memory_mb": 507.82421875,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 5,
+      "query": "Where is the Great Wall located?",
+      "answer": "The provided context does not contain relevant information about the location of the Great Wall.",
+      "total_latency_ms": 738.3011559995794,
+      "retrieval_latency_ms": 454.2004270006146,
+      "generation_latency_ms": 284.0555860002496,
+      "total_tokens": 214,
+      "prompt_tokens": 197,
+      "context_tokens": 97,
+      "generation_tokens": 17,
+      "cpu_memory_mb": 507.83203125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 6,
+      "query": "Who developed the theory of relativity?",
+      "answer": "The provided context does not contain relevant information about the theory of relativity or its developer. The contexts provided are about Stevie Wonder, the origin of team sports, and transfer agents, respectively. None of them mention the theory of relativity or its developer, Albert Einstein.",
+      "total_latency_ms": 748.4718740015524,
+      "retrieval_latency_ms": 417.19464200104994,
+      "generation_latency_ms": 331.22492100119416,
+      "total_tokens": 272,
+      "prompt_tokens": 216,
+      "context_tokens": 134,
+      "generation_tokens": 56,
+      "cpu_memory_mb": 507.8359375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 7,
+      "query": "What is the largest rainforest?",
+      "answer": "The provided context does not contain relevant information about the largest rainforest.",
+      "total_latency_ms": 733.3163909988798,
+      "retrieval_latency_ms": 470.3453809997882,
+      "generation_latency_ms": 262.89964100033103,
+      "total_tokens": 177,
+      "prompt_tokens": 162,
+      "context_tokens": 65,
+      "generation_tokens": 15,
+      "cpu_memory_mb": 507.83984375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 8,
+      "query": "What plays did Shakespeare write?",
+      "answer": "The provided context does not contain relevant information about Shakespeare's plays.",
+      "total_latency_ms": 719.1441220002162,
+      "retrieval_latency_ms": 410.252132000096,
+      "generation_latency_ms": 308.8435310000932,
+      "total_tokens": 222,
+      "prompt_tokens": 208,
+      "context_tokens": 132,
+      "generation_tokens": 14,
+      "cpu_memory_mb": 507.83984375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 9,
+      "query": "How many bones are in the human body?",
+      "answer": "The provided context does not contain information about the total number of bones in the human body. It only mentions specific bones or groups of bones, such as the ossicles, the tibia, and the fibula, but does not provide a comprehensive count.",
+      "total_latency_ms": 855.3896350003924,
+      "retrieval_latency_ms": 496.9692249997024,
+      "generation_latency_ms": 358.3666769991396,
+      "total_tokens": 256,
+      "prompt_tokens": 204,
+      "context_tokens": 108,
+      "generation_tokens": 52,
+      "cpu_memory_mb": 507.84765625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 10,
+      "query": "Who developed the theory of relativity?",
+      "answer": "The provided context does not contain relevant information about the theory of relativity or its developer.",
+      "total_latency_ms": 620.6210349992034,
+      "retrieval_latency_ms": 402.2237950011913,
+      "generation_latency_ms": 218.35164799995255,
+      "total_tokens": 235,
+      "prompt_tokens": 216,
+      "context_tokens": 134,
+      "generation_tokens": 19,
+      "cpu_memory_mb": 507.84765625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 11,
+      "query": "What plays did Shakespeare write?",
+      "answer": "The provided context does not contain relevant information about Shakespeare's plays.",
+      "total_latency_ms": 1026.8667079999432,
+      "retrieval_latency_ms": 442.4048799992306,
+      "generation_latency_ms": 584.3068540016247,
+      "total_tokens": 222,
+      "prompt_tokens": 208,
+      "context_tokens": 132,
+      "generation_tokens": 14,
+      "cpu_memory_mb": 507.84765625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 12,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "The largest planet in the Solar System is Jupiter.",
+      "total_latency_ms": 3449.514369998724,
+      "retrieval_latency_ms": 3226.946955999665,
+      "generation_latency_ms": 222.42225000081817,
+      "total_tokens": 184,
+      "prompt_tokens": 173,
+      "context_tokens": 78,
+      "generation_tokens": 11,
+      "cpu_memory_mb": 507.84765625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 13,
+      "query": "Describe how many bones are in the human body?",
+      "answer": "The provided context does not contain information about the total number of bones in the human body. It only mentions specific bones or groups of bones, such as the ossicles (3 bones), the tibia and fibula (2 bones in the leg), but does not provide a comprehensive count of all the bones in the human body.",
+      "total_latency_ms": 1565.5301749993669,
+      "retrieval_latency_ms": 1140.7812890010973,
+      "generation_latency_ms": 424.67998000029183,
+      "total_tokens": 272,
+      "prompt_tokens": 205,
+      "context_tokens": 108,
+      "generation_tokens": 67,
+      "cpu_memory_mb": 507.84765625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    },
+    {
+      "query_id": 14,
+      "query": "Tell me about: who wrote the novel '1984'?",
+      "answer": "The provided context doesn't contain relevant information about the novel '1984'. However, I can tell you that the novel '1984' was written by George Orwell.",
+      "total_latency_ms": 760.408443000415,
+      "retrieval_latency_ms": 541.8537409987039,
+      "generation_latency_ms": 218.5000459994626,
+      "total_tokens": 201,
+      "prompt_tokens": 166,
+      "context_tokens": 58,
+      "generation_tokens": 35,
+      "cpu_memory_mb": 507.51171875,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1765303249.096032
+    }
+  ]
+}

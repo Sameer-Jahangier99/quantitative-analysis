@@ -1,0 +1,44 @@
+{
+  "latency": {
+    "vanilla_p50_ms": 733.3163909988798,
+    "cag_p50_ms": 613.4844320004049,
+    "improvement_p50_percent": 16.341099213021398,
+    "vanilla_p95_ms": 2130.725433499172,
+    "cag_p95_ms": 1041.816638199998,
+    "improvement_p95_percent": 51.10507333227443,
+    "vanilla_mean_ms": 918.2045236665241,
+    "cag_mean_ms": 529.5343039335421,
+    "improvement_mean_percent": 42.32937321861205,
+    "speedup_factor": 51.2076860638847
+  },
+  "tokens": {
+    "vanilla_total": 3267,
+    "cag_total": 0,
+    "tokens_saved": 3267,
+    "reduction_percent": 100.0,
+    "vanilla_mean_per_query": 217.8,
+    "cag_mean_per_query": 0.0
+  },
+  "memory": {
+    "cpu": {
+      "vanilla_peak_mb": 507.84765625,
+      "cag_peak_mb": 0,
+      "overhead_percent": -100.0
+    },
+    "gpu": {
+      "vanilla_peak_mb": 0.0,
+      "cag_peak_mb": 0,
+      "overhead_percent": NaN
+    }
+  },
+  "throughput": {
+    "vanilla_qps": 0.3480301936877497,
+    "cag_qps": 0.2423792245137378,
+    "improvement_percent": -30.35684003578184
+  },
+  "cache_performance": {
+    "hit_rate": 0.3333333333333333,
+    "prompt_cache_hits": 3,
+    "semantic_cache_hits": 2
+  }
+}
